@@ -3,9 +3,74 @@
 
 <head>
   <meta name="viewport" content="width=device-width">
-  <title>HTML Elements</title>
+  <title>Stylin-W-CSS</title>
 
   <style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+
+h1.page-header{
+   font-family:'Inknut Antiqua',serif;
+   width:80%;
+   margin:auto;
+   text-align:center;
+   text-shadow: 4px 4px 4px #aaa;
+}
+
+
+
+nav{
+   text-align:center; /* centers the nav */
+}
+
+
+nav a{
+   color:#000; /* font color is black */
+}
+
+
+nav ul {
+   list-style:none; /* removes the bullets */
+}
+nav li
+{
+   display:inline-block; /* makes <li> horizontal, but able to declare margins */
+   margin:0 2%; /* margin left-right, gets smaller as necessary */
+}
+nav a:hover{
+   text-decoration: none; /* default underline goes away on hover */
+}
+/* end nav rules */
+
+
+
+            html{
+               background-color:#ccc;
+                    }
+
+
+               body {
+                font-family:Arial,sans-serif;
+                background-color:#fff;
+                max-width:960px;
+                width:90%;
+              }
+
+                    body {
+                          font-family:Arial,sans-serif;
+                          background-color:#fff;
+                          max-width:960px;
+                          width:90%;
+                          margin:auto;
+                          padding:1%;
+                        }
+          .page-header{
+                background-color: #54585d;
+                text-align: center;
+                font-family: 'Inkut Antiqua' ,serif;
+}
+
     table.mytable {
       border-collapse: collapse;
     }
@@ -17,19 +82,41 @@
       font size;
       13px border: 1px solid #54585d;
     }
-table.my-table td{
 
-  
-}
     table.my-table td {
       padding: 15px;
+      border: 1px solid #6583a8;
+    }
+    table.my-table tr{
+      background-color:#53759e
+    }
+    table.my-table tr:nth-child(odd){
+        background-color:#ffffff
 
+    }
+    footer {
+      text-align:center;
+      clear:both;
     }
   </style>
 </head>
 
+
 <body>
-  <h1>HTML Elements</h1>
+  <h1 class="page-header">Stylin' with CSS</h1>
+  <nav>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+    
+      </ul>
+  </nav>
+  <p>This page demostrates how to create a look and feel on our pages using CSS.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat pellentesque adipiscing commodo elit. At volutpat diam ut venenatis. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Justo eget magna fermentum iaculis eu non. Mauris pellentesque pulvinar pellentesque habitant morbi. Enim ut sem viverra aliquet eget sit amet. Enim ut tellus elementum sagittis vitae et leo duis ut. Nulla facilisi etiam dignissim diam quis enim lobortis. Et tortor at risus viverra adipiscing at in tellus integer.
+    Nunc sed id semper risus in. Gravida cum sociis natoque penatibus. Leo integer malesuada nunc vel risus commodo. Faucibus et molestie ac feugiat sed. Iaculis eu non diam phasellus vestibulum. Lobortis elementum nibh tellus molestie nunc non blandit massa. Enim neque volutpat ac tincidunt vitae semper quis lectus. Urna et pharetra pharetra massa massa ultricies. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. Tellus integer feugiat scelerisque varius. Purus non enim praesent elementum facilisis. Eu ultrices vitae auctor eu augue ut. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Fermentum odio eu feugiat pretium nibh. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Ultrices eros in cursus turpis massa tincidunt dui ut. Malesuada pellentesque elit eget gravida cum. Non blandit massa enim nec dui nunc.</p>
   <p>Clever content goes here</p>
   <p>Clever content goes here</p>
   <p>Clever content goes here</p>
@@ -55,6 +142,9 @@ table.my-table td{
   <p>Here is how we use the <i> italize</i> tag.</p>
   <p>Here is how we use the <b> bold </b> tag.</p>
 
+
+
+  
   <div>Here is inside the div. <span style="background-color: yellow;"> Here we are inside a span. </span></div>
   <table class="my-table">
     <tr>
@@ -79,7 +169,7 @@ table.my-table td{
     <td> Judy@example.com</td>
   </tr>
   </table>
-
+<footer>Copyright &copy; 2024</footer>
 
 
 </body>
